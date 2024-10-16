@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="main-content" id="sign-up">
+      <div class="main">
+        <div class="container">
+          <h2 class="sign">Sign Up</h2>
+          <div id="signupsuccess">Signup Successful</div>
+          <div id="username">
+            <label for="name">Username:</label>
+            <input
+              type="text"
+              id="username-input"
+              placeholder="Enter your username"
+            />
+            <p id="user-name-error"></p>
+          </div>
+
+          <div id="email">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email-input"
+              placeholder="Enter your email"
+            />
+            <p id="email-error"></p>
+          </div>
+
+          <div id="password">
+            <label for="password">Password:</label>
+            <div class="input-box">
+              <input
+                type="password"
+                id="password-input"
+                placeholder="Enter a strong password"
+              />
+              <img
+                src="./assets/eye-close.png"
+                id="toggle-password"
+                alt="Show/Hide Password"
+              />
+            </div>
+            <p id="password-error"></p>
+          </div>
+
+          <div id="confirmPassword">
+            <label for="confirm-password-input">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password-input"
+              placeholder="Reenter your password"
+            />
+            <p id="confirm-password-error"></p>
+          </div>
+
+          <button type="submit" class="btn" onclick="handleSubmit()">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
