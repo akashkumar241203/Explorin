@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh; /* If needed, adjust this based on your content */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    height: 5rem;
+    color: whitesmoke;
+}
+
+.name{
+    font-size: x-large;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-input {
+    padding: 10px 40px 10px 10px;
+    border-radius: 1rem;
+    border: none;
+    width: 15rem;
+    font-size: 12px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    color: #555; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filters {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.filter{
+    border: none;
+    padding: 2px 0px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.news-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-card{
+    margin:10px;
+    background-color: rgba(255, 255, 255, 0.36);
+    box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.3);
+    width: 350px;
+    position: relative;
+    border-radius: 8px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.news-source{
+    position: absolute;
+    background-color: #e3dfdf;
+    border-radius: 10px;
+    padding: 2px 10px;
+    right: 10px;
+    top: 8px;
+    max-width: 280px;
+    opacity: 0.8;
+}
+
+.news-image{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.news-content{
+    padding: 1rem;
+}
+.news-info{
+    font-size: small;
+    color: #555;
+}
+
+.news-desc{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        padding: 0 10px;
+    }
+
+    .name {
+        font-size: large;
+    }
+
+    .searchbar {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .searchinput {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    .search-icon {
+        font-size: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+    }
+
+    .filters {
+        display: none;
+    }
+
+    .news-card {
+        width: 280px; 
+        margin: 5px; 
+    }
+
+    .news-image {
+        height: 200px; 
+    }
+
+    .news-heading {
+        font-size: 1rem;
+    }
+
+    .news-info {
+        font-size: 0.8rem;
+    }
+
+    .news-desc {
+        font-size: 0.9rem;
+    }
+}

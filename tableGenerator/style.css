@@ -52,3 +52,9 @@
     font-family: 'Arial', sans-serif;
     color: #555; 
 }
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+}
